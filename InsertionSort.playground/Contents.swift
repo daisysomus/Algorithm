@@ -22,5 +22,10 @@ func insertionSort<T:Comparable>(_ array:inout [T]) -> [T] {
     return array
 }
 
-var array = [8, 45, 7, 3, 2, 66, 32, 87, 23, 31, 0, -1]
+//var array = [8, 45, 7, 3, 2, 66, 32, 87, 23, 31, 0, -1]
+var array = [64, 20, 50, 21, 72, 10, 23, -1, 4, 5]
+
+let start = CFAbsoluteTimeGetCurrent()
 insertionSort(&array)
+let end = CFAbsoluteTimeGetCurrent()
+print("total time:\(end - start)")
